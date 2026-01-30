@@ -1,7 +1,3 @@
-Este es el borrador de Nivel 2 para GitHub de tu tercer proyecto. Sigue la estructura y el tono técnico-profesional de los dos anteriores, integrando la complejidad de **TimesNet**, el aprendizaje híbrido y la arquitectura de **Reinforcement Learning**.
-
----
-
 # 1. Resumen del Proyecto
 
 Mientras que el análisis técnico tradicional se basa en indicadores fijos y la mayoría de los modelos de Deep Learning sufren de "miopía temporal", este proyecto propone una solución de **Aprendizaje por Refuerzo Profundo (DRL)** diseñada para capturar patrones cíclicos multiescala en el mercado Forex (EURUSD). El desafío central es la extracción de características en series temporales financieras, donde el ruido suele sepultar a la señal.
@@ -63,7 +59,7 @@ Este framework demuestra que el Deep Reinforcement Learning, cuando se combina c
 
 ## Próximos pasos:
 
-- **Multi-Agent Training:** Entrenar una población de agentes con diferentes aversiones al riesgo y combinar sus decisiones mediante un sistema de votación ponderado por entropía.
-- **Introducción de Transformers para Atención Global:** Sustituir la capa de fusión MLP por un bloque de **Cross-Attention** para que el modelo decida dinámicamente si debe dar más importancia a la escala horaria o a la diaria según la volatilidad actual.
-- **Curriculum Learning:** Implementar un esquema de entrenamiento donde el agente comience aprendiendo en periodos históricos sencillos (tendencias claras) antes de enfrentarse a periodos de alta fragmentación y ruido.
-- **Gestión de Lotes Dinámica:** Ajustar el apalancamiento (Leverage) de forma automática mediante un tercer cabezal en la red neuronal, permitiendo al agente gestionar el tamaño de la posición en función de su confianza en la predicción.
+1.  **Expansión Multi-Activo y Universos de Alphas:** Evolucionar de un solo par a una arquitectura multivariante que integre correlaciones entre divisas (e.g., USD Index) y una librería de Alphas más extensa, similar a la desarrollada en proyectos previos.
+2.  **Transición a Vision Transformers (ViT):** Sustituir el backbone de CNN por **Vision Transformers** sobre las representaciones 2D generadas por FFT. Esto permitiría capturar dependencias globales de largo alcance mediante mecanismos de auto-atención, superando las limitaciones de los campos receptivos de las convoluciones.
+3.  **Regime-Based Curriculum Learning:** Implementar un esquema de entrenamiento progresivo donde el agente comience operando en regímenes de baja volatilidad y tendencias claras ("fáciles") antes de ser expuesto a crisis financieras o mercados laterales ruidosos ("difíciles"), acelerando la formación de una política base robusta.
+4.  **Optimización Bayesiana de Hiperparámetros:** Realizar un ajuste fino sistemático de la arquitectura (d_model, top_k) y parámetros de RL (gamma, tau, learning rate) mediante **Optuna**, buscando maximizar el Sortino Ratio y minimizar el Maximum Drawdown en el set de validación.
