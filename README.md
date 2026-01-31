@@ -1,5 +1,6 @@
 ![Diagrama](docs/images/miro_tmp.png)
 
+![Diagrama](docs/images/seeFFT.png)
 
 
 # 1. Resumen del Proyecto
