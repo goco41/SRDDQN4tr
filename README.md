@@ -1,3 +1,7 @@
+![Diagrama](docs/images/miro_tmp.png)
+
+
+
 # 1. Resumen del Proyecto
 
 Mientras que el análisis técnico tradicional se basa en indicadores fijos y la mayoría de los modelos de Deep Learning sufren de "miopía temporal", este proyecto propone una solución de **Aprendizaje por Refuerzo Profundo (DRL)** diseñada para capturar patrones cíclicos multiescala en el mercado Forex (EURUSD). El desafío central es la extracción de características en series temporales financieras, donde el ruido suele sepultar a la señal.
