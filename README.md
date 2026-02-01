@@ -30,13 +30,16 @@ Los resultados muestran que, aunque el modelo reduce la pérdida (`Loss`), la po
 # 2. Requisitos, Ejecución y Artefactos
 
 ## Datos necesarios (inputs)
-- `EURUSD_Candlestick_1_Hour`: Datos 2006-2025.
-- `Alphas Library`: Indicadores de complejidad y entropía (DynETD, MACD, PPO).
+Para la ejecución completa del pipeline se requieren los siguientes archivos en `/content/`:
+- **Datos Horarios:** `EURUSD_Candlestick_1_Hour_ASK_22.03.2006-30.08.2025.csv` y su contraparte `BID`.
+- **Datos Diarios:** `EURUSD_Candlestick_1_D_ASK_22.03.2006-30.08.2025.csv` y su contraparte `BID`.
+- **Librería de Alphas:** `all_raw_new.csv` y `all_raw_old.csv` (generados en el Proyecto 2).
 
 ## Artefactos generados (outputs)
-- `EURUSD_Final_Dataset_RL_With_All_Alphas.csv`: Dataset maestro con inyección de Alphas.
-- `best_trading_model_with_alphas.pth`: Estado de la red neuronal en su punto de mayor estabilidad.
-- `training_log_full.txt`: Registro de 80 episodios de entrenamiento.
+El pipeline genera automáticamente los siguientes archivos de datos procesados:
+- `EURUSD_Precomputed_Tested.csv`: Dataset con sincronización horaria-diaria y test de integridad (Look-ahead bias check).
+- `EURUSD_Final_Dataset_RL.csv`: Dataset base con la recompensa para el entrenamiento de RL.
+- `EURUSD_Final_Dataset_RL_With_All_Alphas.csv`: Versión final enriquecida con los indicadores técnicos de mayor relevancia estadística.
 
 
 # 3. Experimentos y Auditoría de Resultados
