@@ -2,7 +2,7 @@
 
 Este proyecto sigue los pasos del anterior, moviendo el paradigma desde la minería de Alphas estadística hacia el **Aprendizaje por Refuerzo Profundo (Deep RL)**. El desafío central es la "Eficiencia del Mercado": en un entorno con spreads, comisiones y swaps, la señal predictiva debe ser lo suficientemente fuerte como para superar los costes de fricción.
 
-## El core de la "Solución":
+## El core:
 
 ### TimesNet: Extracción Espectral en 2D
 A diferencia de las arquitecturas lineales (RNN/LSTM), TimesNet descompone la serie temporal 1D en variaciones 2D basadas en periodicidades detectadas por **FFT (Fast Fourier Transform)**. 
