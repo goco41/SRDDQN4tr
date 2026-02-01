@@ -1,6 +1,6 @@
 # 1. Resumen del Proyecto
 
-Este proyecto representa la culminación técnica de la serie, moviendo el paradigma desde la minería de Alphas estadística (Proyecto 2) hacia el **Aprendizaje por Refuerzo Profundo (Deep RL)**. El desafío central es la "Eficiencia del Mercado": en un entorno con spreads, comisiones y swaps, la señal predictiva debe ser lo suficientemente fuerte como para superar los costes de fricción.
+Este proyecto sigue los pasos del anterior, moviendo el paradigma desde la minería de Alphas estadística hacia el **Aprendizaje por Refuerzo Profundo (Deep RL)**. El desafío central es la "Eficiencia del Mercado": en un entorno con spreads, comisiones y swaps, la señal predictiva debe ser lo suficientemente fuerte como para superar los costes de fricción.
 
 ## El core de la "Solución":
 
